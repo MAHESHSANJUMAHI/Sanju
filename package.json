@@ -1,0 +1,20 @@
+{
+  "name": "cyautomationb22",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.13.2",
+    "cypress-real-events": "^1.13.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {
+    "allure-cypress": "^3.0.0-beta.10",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "description": ""
+}
