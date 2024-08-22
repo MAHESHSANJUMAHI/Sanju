@@ -47,7 +47,7 @@ describe('Automation - Working With Drag and Drop', function () {
         cy.get('#plate-items').trigger('drop', {
 
             dataTransfer
-        })
+        }) 
 
         cy.get('#menu-ice-cream').trigger('dragstart', {
 
