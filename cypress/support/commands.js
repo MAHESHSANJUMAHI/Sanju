@@ -25,4 +25,32 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import "cypress-real-events";  
-import './commands';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        
+import 'cypress-file-upload';   
+require('@4tw/cypress-drag-drop')
+
+require('cypress-downloadfile/lib/downloadFileCommand')             
+
+Cypress.Commands.add('login', (username,password) => {
+  cy.visit('/')
+  cy.get('input[name="username"]').type(username)
+  cy.get('input[name="password"]').type(password+"{enter}")
+  cy.contains("Dashboard").should('be.visible')
+
+})
+
+Cypress.Commands.add('addEmployee', (value1, value2) => {
+
+  cy.contains('PIM').click()
+
+  cy.contains('Add Employee').click()
+
+  cy.get('input[name="firstName"]').type(value1)
+
+  cy.get('input[name="lastName"]').type(value2)
+
+  cy.get('button[type="submit"]').click()
+
+  cy.contains('Successfully Saved').should("be.visible")
+
+})
