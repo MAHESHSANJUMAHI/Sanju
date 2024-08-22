@@ -5,7 +5,7 @@ describe('Automation - Working With Drag and Drop', function () {
         Cypress.on("uncaught:exception", () => {
 
             return false;
-        });
+        }); 
 
 
         //first apporuch using drag and drop plugin
