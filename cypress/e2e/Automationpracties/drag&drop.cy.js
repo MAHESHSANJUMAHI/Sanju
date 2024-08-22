@@ -13,7 +13,7 @@ describe('Automation - Working With Drag and Drop', function () {
 
         cy.wait(5000)
         cy.get('li[data-id="fried-chicken"]').drag('#plate-items')
-        cy.get('#menu-ice-cream').drag('#plate-items')
+        cy.get('#menu-ice-cream').drag('#plate-items ')
 
 
     })
