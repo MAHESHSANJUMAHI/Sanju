@@ -9,6 +9,7 @@ module.exports = defineConfig({
       //  baseUrl:"https://reqres.in",
     //defaultCommandTimeout: 20000,
     pageLoadTimeout: 120000,
+    specPattern : "**/*.feature",
     viewportWidth: 1920,
     viewportHeight: 1080,
     watchForFileChanges: false,
