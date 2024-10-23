@@ -5,7 +5,8 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
     video: true,
-    baseUrl: "https://opensource-demo.orangehrmlive.com",
+      baseUrl: "https://opensource-demo.orangehrmlive.com",
+      //  baseUrl:"https://reqres.in",
     //defaultCommandTimeout: 20000,
     pageLoadTimeout: 120000,
     viewportWidth: 1920,
@@ -16,6 +17,7 @@ module.exports = defineConfig({
     // retries: {"openMode": 3, runMode:2},
     videoCompression: 51,
     env: {
+      "raju": "orangehrm=9e808d52a257ba474d025ca3919d9ae4",
 
       "username": "Mahesh",
       "password": "Raju"
