@@ -12,31 +12,25 @@ Feature: Verify Login functionality
         Given User Launch the Application
         When  User enter username as "Admin" password as "dghjh"
         And   User clicks on login Button
-        Then  User should get login error message
+        Then  User should get login error message 
 
-    Scenario: Verify Login with inalid username and valid Password
 
-        Given User Launch the Application
-        When  User enter username as "gnmbjhg" password as "admin123"
-        And   User clicks on login Button
-        Then  User should get login error message
-
-    Scenario: Verify Login with inalid username and invalid Password
+    Scenario: Verify Login with Invalid username and Valid password
 
         Given User Launch the Application
-        When  User enter username as "gnmbjhg" password as "dfkjgh"
-        And   User clicks on login Button
-        Then  User should get login error message
+        When user enter username as 'sgdgdds' password as 'admin123'
+        And User clicks on login Button 
+        Then  User should get login error message 
 
-    Scenario Outline: Verify Login Invalid Test data
+    Scenario: Verify Login with Invalid username nad Invalid password 
 
         Given User Launch the Application
-        When  User enter username as "<username>" password as "<password>"
-        And   User clicks on login Button
-        Then  User should get login error message
+        When user enter username as 'ffyfhhfh' password as 'ghdfhgf'
+        And User clicks on login Button
+        Then  User should get login error message 
 
-        Examples:
-            | username | password |
-            | fvbhf    | admin123 |
-            | Admin    | ffhfb    |
-            | Admfgjin | ffhfb    |
+    Scenario: Verify Login without username nad password 
+
+        Given User Launch the Application 
+        When User clicks on login Button 
+        Then  User should get login error message 
