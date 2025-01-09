@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+/////npm install -g json-server
+
 import "cypress-real-events";  
         
 import 'cypress-file-upload';   
